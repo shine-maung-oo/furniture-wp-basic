@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #f15757;
+  --nav-bottom-color: #f23030;
+  --header-color: #1f2025;
+  --text-color: #565658;
+  --contact-text-color: #6f6f6f;
+  --contact-border-color: #d9d9d9;
+  --footer-bg: #E4EEEE;
+  --JosefinSans: "Josefin Sans", sans-serif;
+  --BeVietnamPro: "Be Vietnam Pro", sans-serif;
+}
+
+/* header  */
+.navbar-section {
+  background-color: #ffffff;
+}
+
+.brand-logo {
+  width: 50%;
+}
+
+.nav-w {
+  width: 50%;
+}
+
+.navbar-section .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 27px 3px;
+  border-bottom: 4px solid transparent;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.navbar-section .navbar-nav .nav-item .nav-link.active,
+.navbar-section .navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+  border-bottom: 4px solid var(--nav-bottom-color);
+}
+
+/* end header  */
+
+/* features  */
+.features {
+  background-color: #f5f5f5;
+}
+
+.feature-box {
+  background-color: #f5f5f5;
+  border-right: 2px solid white;
+}
+
+
+.feature-icon {
+  width: 80px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
+
+.feature-header {
+  color: var(--text-color);
+  font-family: var(--JosefinSans);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/* end features */
+
+/* profile  */
+
+.main-header {
+  color: var(--header-color);
+  font-weight: 700;
+  font-family: var(--JosefinSans);
+  line-height: 45px;
+}
+
+.ps-lg {
+  padding-left: 5.5rem;
+}
+
+.all-text {
+  color: var(--text-color);
+  font-size: 15px;
+  font-family: var(--BeVietnamPro);
+  line-height: 30px;
+}
+
+.see-more-btn {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--JosefinSans);
+  border: none;
+  background-color: var(--nav-bottom-color);
+  padding: 12px 25px 10px 25px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.see-more-btn:hover {
+  background-color: var(--header-color);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+/* end profile  */
+
+/* stock  */
+.sub-header {
+  color: var(--text-color);
+  font-family: var(--BeVietnamPro);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.product-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-box .product-img {
+  width: 100%;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.overlay .eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-box:hover .product-img {
+  transform: scale(1.12);
+}
+
+.product-box:hover .overlay {
+  opacity: 1;
+}
+
+.product-title {
+  color: var(--header-color);
+  font-family: var(--JosefinSans);
+  margin: 20px 0;
+}
+
+.product-modal-box .modal-header {
+  padding: 10px;
+}
+
+.product-modal-box .modal-body {
+  padding: 35px;
+}
+
+/* stock  */
+
+/* footer  */
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.footer-header {
+  color: var(--header-color);
+  font-family: var(--JosefinSans);
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  width: 18px;
+  margin-right: 15px;
+}
+
+.contact-text {
+  color: var(--text-color);
+  font-family: var(--BeVietnamPro);
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav {
+  color: var(--text-color);
+  font-family: var(--BeVietnamPro);
+  font-size: 15px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 30px;
+  margin-right: 30px;
+}
+
+/* end footer  */
+
+/* banner  */
+.header-position {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translateY(-50%);
+}
+
+.banner-header {
+  color: white;
+  font-family: var(--JosefinSans);
+}
+
+.header-position .breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: var(--BeVietnamPro);
+  text-decoration: none;
+}
+
+.right-icon {
+  width: 15px;
+  margin: 0 10px;
+}
+
+/*  end banner  */
+
+/* about us  */
+.about-feature-icon {
+  width: 45px;
+  margin-right: 20px;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: var(--JosefinSans);
+}
+
+/* end about us  */
+
+/* products */
+
+
+.pagination .page-link {
+  font-size: 14px;
+  font-family: var(--BeVietnamPro);
+  color: var(--header-color);
+  margin: 0 12px;
+  width: 27px;
+  height: 27px;
+  padding: 3px 8px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+
+.pagination .prev {
+  margin-right: 100px !important;
+  width: auto;
+  height: auto;
+}
+
+.pagination .next {
+  margin-left: 100px !important;
+  width: auto;
+  height: auto;
+}
+
+.pagination .page-link.active {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: #ffffff;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
+/* end products */
+
+/* contact us  */
+
+.map-address .contact-icon {
+  vertical-align: top;
+}
+
+.map-address .footer-header {
+  margin-bottom: 10px;
+}
+
+.contact-margin {
+  margin: 50px 0;
+}
+
+.send-btn {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--JosefinSans);
+  border: none;
+  background-color: var(--nav-bottom-color);
+  padding: 12px 25px 10px 25px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.send-btn:hover {
+  background-color: var(--header-color);
+}
+
+.contact-form .form-control,
+.contact-form .form-control::placeholder {
+  color: var(--contact-text-color);
+  font-family: var(--BeVietnamPro);
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  border: 2px solid var(--contact-border-color);
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+}
+
+/* end contact us  */
+
+/* keyframes fade effect  */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade_effect {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* end keyframes fade effect  */
+
+/* media query responsive  */
+
+@media screen and (max-width:1366px) and (min-width:1024px) {
+  .all-text br {
+    display: none;
+  }
+
+  .main-header br {
+    display: none;
+  }
+
+  .main-header {
+    font-size: 30px;
+  }
+
+  .nav-w {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .pagination {
+    display: none;
+  }
+
+  .nav-w {
+    width: 75%;
+  }
+
+  .all-text br {
+    display: none;
+  }
+
+  .main-header br {
+    display: none;
+  }
+
+  .navbar-section .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding: 24px 2px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar-section .navbar-nav .nav-item .nav-link.active,
+  .navbar-section .navbar-nav .nav-item .nav-link:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--nav-bottom-color);
+  }
+
+  .brand-logo {
+    width: 45%;
+  }
+
+  .feature-icon {
+    width: 60px;
+    padding-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .feature-header {
+    font-size: 17px;
+  }
+
+  .ps-lg {
+    padding-left: 12px;
+  }
+
+  .main-header {
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  .all-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .see-more-btn,
+  .send-btn {
+    font-size: 13px;
+    padding: 9px 19px 7px 19px;
+  }
+
+  .sub-header {
+    font-size: 18px;
+    margin-bottom: 10px !important;
+  }
+
+  .pl-m {
+    padding-left: 100px;
+  }
+
+  .about-us .main-header br,
+  .about-us .all-text br {
+    display: block;
+  }
+
+  .header-position {
+    left: 5%;
+  }
+
+  .banner-header {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+
+  .about-feature-icon {
+    width: 40px;
+    margin-right: 15px;
+  }
+
+  .feature-text {
+    font-size: 15px;
+  }
+
+  .product-modal-box .modal-body {
+    padding: 20px;
+  }
+
+  .product-modal-box .modal-header {
+    padding: 7px;
+  }
+
+  .product-modal-box .modal-header .btn-close {
+    background: transparent var(--bs-btn-close-bg) center/0.75em auto no-repeat;
+
+  }
+
+  .contact-form .form-control {
+    padding: 10px 18px;
+  }
+
+  .contact-form .form-control,
+  .contact-form .form-control::placeholder {
+    font-size: 14px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .footer-nav {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .w-sm-100 {
+    width: 100%;
+    align-items: center !important;
+  }
+
+  button.navbar-toggler {
+    height: 43px;
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    padding: 4px 3px;
+  }
+
+  button.navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(0.3) opacity(0.7) drop-shadow(0 0 var(--nav-bottom-color));
+  }
+
+  .feature-box {
+    border: none;
+  }
+
+  nav.navbar.navbar-expand-sm {
+    padding: 0;
+  }
+
+  .navbar-section .navbar-nav .nav-item .nav-link {
+    display: inline-block;
+    font-size: 13px;
+    padding: 8px 1px;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar-section .navbar-nav .nav-item .nav-link.active,
+  .navbar-section .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--nav-bottom-color);
+  }
+
+  .main-header {
+    line-height: 27px;
+    font-size: 22px;
+  }
+
+  .main-header br {
+    display: block;
+  }
+
+  .all-text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .see-more-btn,
+  .send-btn {
+    font-size: 12px;
+    padding: 8px 18px 6px 18px;
+  }
+
+  .sub-header {
+    font-size: 16px;
+    margin-bottom: 7px !important;
+  }
+
+  .py-mobile {
+    padding: 20px;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .pl-mobile,
+  .pl-m {
+    padding-left: 30px;
+  }
+
+  .footer-header {
+    margin-bottom: 10px;
+  }
+
+  .contact-icon {
+    width: 17px;
+    margin-right: 10px;
+    vertical-align: top;
+    margin-top: 2px;
+  }
+
+  .contact-text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .footer-nav {
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  .social-icon {
+    width: 27px;
+    margin-right: 22px;
+  }
+
+  .banner-header {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 0px;
+  }
+
+  .breadcrumb-item {
+    font-size: 9px;
+  }
+
+  .right-icon {
+    width: 10px;
+    margin: 0 3px;
+  }
+
+  .about-us .all-text br {
+    display: none;
+  }
+
+  ul.navbar-nav {
+    padding-bottom: 15px;
+  }
+
+  .contact-form .form-control,
+  .contact-form .form-control::placeholder {
+    font-size: 13px;
+  }
+
+  .contact-form .form-control {
+    padding: 8px 14px;
+  }
+
+  .map-address iframe {
+    height: 350px;
+  }
+
+  .feature-header br {
+    display: none;
+  }
+}
+
+@media screen and (max-width:280px) {
+  .feature-icon {
+    width: 50px;
+    padding-top: 15px;
+    margin-bottom: 27px;
+  }
+
+  .navbar-section .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+    padding: 6px 1px;
+  }
+
+  .brand-logo {
+    width: 40%;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  button.navbar-toggler {
+    height: 40px;
+    border-radius: 0;
+    padding: 3px 2px;
+  }
+
+  .feature-header {
+    font-size: 15px;
+  }
+
+  .main-header {
+    line-height: 21px;
+    font-size: 15px;
+  }
+
+  .all-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .see-more-btn,
+  .send-btn {
+    font-size: 10px;
+    padding: 7px 16px 5px 16px;
+  }
+
+  .sub-header {
+    font-size: 13px;
+    margin-bottom: 4px !important;
+  }
+
+  .product-title {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    width: 125px;
+  }
+
+  .footer-header {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .pl-mobile,
+  .pl-m {
+    padding-left: 17px;
+  }
+
+  .contact-icon {
+    width: 16px;
+    margin-right: 7px;
+    vertical-align: top;
+    margin-top: 2px;
+  }
+
+  .contact-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer-nav {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .banner-header {
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 0px;
+  }
+
+  .breadcrumb-item {
+    font-size: 7px;
+  }
+
+  .right-icon {
+    width: 8px;
+    margin: 0px 2px;
+    margin-bottom: 1px;
+  }
+
+  .about-feature-icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .feature-text {
+    font-size: 13px;
+  }
+
+  .product-modal-box .modal-body {
+    padding: 10px;
+  }
+
+  .map-address iframe {
+    height: 330px;
+  }
+
+  .map-address .footer-header {
+    margin-bottom: 7px;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .contact-form .form-control {
+    padding: 7px 12px;
+  }
+
+  .contact-form .form-control,
+  .contact-form .form-control::placeholder {
+    font-size: 12px;
+  }
+}
